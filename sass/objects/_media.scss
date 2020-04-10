@@ -1,0 +1,12 @@
+@media (min-width:800px) {
+    .form-wrapper {
+        &-image {
+            display:-webkit-box;
+            display:flex;
+            height:30%;
+        }
+        &-login {
+            width:70%;
+        }
+    }
+}

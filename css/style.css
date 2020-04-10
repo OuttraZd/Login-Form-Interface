@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Source+Sans+Pro:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: yellow;
+}
+
+@media (min-width: 800px) {
+  .form-wrapper-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30%;
+  }
+  .form-wrapper-login {
+    width: 70%;
+  }
+}
+
+.form-wrapper {
+  width: 310px;
+  height: 530px;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.form-wrapper-image {
+  width: 500px;
+  height: auto;
+  background: orange;
+  display: none;
+}
+
+.form-wrapper-login {
+  width: 100%;
+}
+
+.form-wrapper-login__h1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 100px;
+  font-family: 'Baloo Paaji 2', cursive;
+  font-size: 29px;
+}
+
+.form-wrapper-login__formContainer {
+  width: 100%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: inline-block;
+  text-align: center;
+}
+
+.form-wrapper-login__formContainer-Element:nth-child(3) {
+  margin-top: 30px;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog, .form-wrapper-login__formContainer-Element__inputPass {
+  margin-top: 15px;
+  width: 80%;
+  height: 42px;
+  border-radius: 50px;
+  background-color: #ebebeb;
+  border: none;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog::-webkit-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-webkit-input-placeholder {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog:-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass:-ms-input-placeholder {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog::-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-ms-input-placeholder {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-wrapper-login__formContainer-Element__button {
+  border-radius: 50px;
+  width: 80%;
+  height: 45px;
+  border: none;
+  background-color: #35d135;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: ease .4;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.form-wrapper-login__formContainer-Element__button a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.form-wrapper-login__formContainer-Element__button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-wrapper-login__formContainer-Forgot {
+  width: 100%;
+  margin-top: 18px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.form-wrapper-login__formContainer-Forgot a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.form-wrapper-login__formContainer-Forgot a a:hover {
+  color: #35d135;
+}
+
+.form-wrapper-login__formContainer-Create {
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1.1px;
+}
+/*# sourceMappingURL=style.css.map */
