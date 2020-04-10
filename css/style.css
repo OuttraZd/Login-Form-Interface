@@ -21,7 +21,7 @@ body {
 }
 
 .form-wrapper {
-  width: 310px;
+  width: 320px;
   height: 530px;
   background-color: #fff;
   border-radius: 10px;
@@ -70,6 +70,10 @@ body {
   text-align: center;
 }
 
+.form-wrapper-login__formContainer-Element {
+  position: relative;
+}
+
 .form-wrapper-login__formContainer-Element:nth-child(3) {
   margin-top: 30px;
 }
@@ -81,28 +85,51 @@ body {
   border-radius: 50px;
   background-color: #ebebeb;
   border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog:focus, .form-wrapper-login__formContainer-Element__inputPass:focus {
+  border: solid 2px #000;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::-webkit-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-webkit-input-placeholder {
-  padding: 8px 15px;
+  padding: 8px 45px;
   font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog:-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass:-ms-input-placeholder {
-  padding: 8px 15px;
+  padding: 8px 45px;
   font-size: 13px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-ms-input-placeholder {
-  padding: 8px 15px;
+  padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
-  padding: 8px 15px;
+  padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+}
+
+.form-wrapper-login__formContainer-Element-img {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
 }
 
 .form-wrapper-login__formContainer-Element__button {
@@ -117,12 +144,22 @@ body {
   -webkit-transition: ease .4;
   -webkit-transition: ease .4s;
   transition: ease .4s;
+  cursor: pointer;
 }
 
 .form-wrapper-login__formContainer-Element__button a {
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
 }
 
 .form-wrapper-login__formContainer-Element__button:hover {
@@ -141,12 +178,13 @@ body {
 .form-wrapper-login__formContainer-Forgot a {
   text-decoration: none;
   color: #000;
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
+  cursor: pointer;
 }
 
-.form-wrapper-login__formContainer-Forgot a a:hover {
+.form-wrapper-login__formContainer-Forgot a:hover {
   color: #35d135;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
 }
 
 .form-wrapper-login__formContainer-Create {
@@ -156,5 +194,26 @@ body {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.form-wrapper-login__formContainer-Create a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.form-wrapper-login__formContainer-Create-img {
+  width: 20px;
+  height: 15px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
