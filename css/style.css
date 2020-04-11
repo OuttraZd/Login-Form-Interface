@@ -29,6 +29,21 @@ body {
 .form-wrapper-image {
   display: none;
   background-color: #f7b603;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.form-wrapper-image-img {
+  width: 820px;
+  height: 100%;
+  display: none;
 }
 
 .form-wrapper-login {
@@ -229,6 +244,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 60%;
+  }
+  .form-wrapper-image-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .form-wrapper-login {
     width: 40%;

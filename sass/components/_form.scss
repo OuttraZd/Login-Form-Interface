@@ -15,6 +15,17 @@
     &-image {
         display:none;
         background-color:rgb(247, 182, 3);
+        display:-webkit-box;
+        display:flex;
+        -webkit-box-pack:center;
+                justify-content:center;
+        -webkit-box-align:center;
+                align-items:center;
+        &-img {
+            width:820px;
+            height:100%;
+            display:none;
+        }
     }
     &-login {
         width:100%;
