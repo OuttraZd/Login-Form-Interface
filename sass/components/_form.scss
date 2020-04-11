@@ -1,6 +1,6 @@
 .form-wrapper {
     width:320px;
-    height:530px;
+    height:520px;
     background-color:#fff;
     border-radius:10px;
     top:50%;
@@ -13,9 +13,8 @@
     -webkit-box-pack:justify;
     justify-content:space-between;
     &-image {
-        height:auto;
-        background:orange;
         display:none;
+        background-color:rgb(247, 182, 3);
     }
     &-login {
         width:100%;
@@ -92,7 +91,7 @@
                     width:13px;
                     height:13px;
                     position:absolute;
-                    top:30px;
+                    top:29px;
                     left:50px;
                 }
                 &__button {
