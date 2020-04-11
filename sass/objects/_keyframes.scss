@@ -1,0 +1,87 @@
+@-webkit-keyframes hair {
+    from {
+        -webkit-transform:rotateX(0deg);
+        transform:rotateX(0deg);
+    }
+    to {
+        -webkit-transform:rotateX(20deg);
+        transform:rotateX(20deg);
+    }
+}
+
+@keyframes hair {
+    from {
+        -webkit-transform:rotateX(0deg);
+        transform:rotateX(0deg);
+    }
+    to {
+        -webkit-transform:rotateX(20deg);
+        transform:rotateX(20deg);
+    }
+}
+
+@-webkit-keyframes key {
+    from {
+        -webkit-transform:translateY(0px);
+         transform:translateY(0px);
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:translateY(-100px);
+        transform:translateY(-100px);
+        -webkit-transform:rotate(90deg);
+        transform:rotate(90deg);
+    }
+}
+
+@keyframes key {
+    from {
+        -webkit-transform:translateY(0px) rotate(0deg);
+        transform:translateY(0px) rotate(0deg);
+    }
+    to {
+      -webkit-transform:translateY(-100px) rotate(90deg);
+        transform:translateY(-100px) rotate(90deg);
+    }
+}
+
+@-webkit-keyframes skirt {
+    from {
+        -webkit-transform:translate(0px);
+        transform:translate(0px);
+    }
+    to {
+        -webkit-transform:translate(-4px, -10px);
+        transform:translate(-4px, -10px);
+    }
+}
+
+@keyframes skirt {
+    from {
+        -webkit-transform:translate(0px);
+        transform:translate(0px);
+    }
+    to {
+        -webkit-transform:translate(-4px, -10px);
+        transform:translate(-4px, -10px);
+    }
+}
+
+#hair {
+    -webkit-animation:1s hair infinite linear alternate;
+    animation:1s hair infinite linear alternate;
+}
+
+#key {
+    -webkit-animation:2s key infinite linear alternate;
+    animation:2s key infinite linear alternate;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#skirt {
+    -webkit-animation:2s skirt infinite linear alternate;
+    animation:1s skirt infinite linear alternate;
+}

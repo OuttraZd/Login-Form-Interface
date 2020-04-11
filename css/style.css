@@ -5,7 +5,107 @@
 }
 
 body {
-  background-color: yellow;
+  background: #5e2278;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #5e2278), color-stop(88%, #4569bb));
+  background: linear-gradient(0deg, #5e2278 13%, #4569bb 88%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+@-webkit-keyframes hair {
+  from {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes hair {
+  from {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+  }
+}
+
+@-webkit-keyframes key {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes key {
+  from {
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(-100px) rotate(90deg);
+    transform: translateY(-100px) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes skirt {
+  from {
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+  to {
+    -webkit-transform: translate(-4px, -10px);
+    transform: translate(-4px, -10px);
+  }
+}
+
+@keyframes skirt {
+  from {
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+  to {
+    -webkit-transform: translate(-4px, -10px);
+    transform: translate(-4px, -10px);
+  }
+}
+
+#hair {
+  -webkit-animation: 1s hair infinite linear alternate;
+  animation: 1s hair infinite linear alternate;
+}
+
+#key {
+  -webkit-animation: 2s key infinite linear alternate;
+  animation: 2s key infinite linear alternate;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#skirt {
+  -webkit-animation: 2s skirt infinite linear alternate;
+  animation: 1s skirt infinite linear alternate;
 }
 
 .form-wrapper {
@@ -13,11 +113,6 @@ body {
   height: 520px;
   background-color: #fff;
   border-radius: 10px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +123,7 @@ body {
 
 .form-wrapper-image {
   display: none;
-  background-color: #f7b603;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +136,7 @@ body {
 }
 
 .form-wrapper-image-img {
-  width: 820px;
+  width: 95%;
   height: 100%;
   display: none;
 }
@@ -244,6 +339,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 60%;
+    -webkit-box-shadow: 25px 0px 0px 0px #f8f6f6;
+            box-shadow: 25px 0px 0px 0px #f8f6f6;
   }
   .form-wrapper-image-img {
     display: -webkit-box;
@@ -256,6 +353,9 @@ body {
 }
 
 @media (min-width: 950px) {
+  .form-wrapper {
+    height: 85%;
+  }
   .form-wrapper-login__formContainer-Element-img {
     left: 55px;
   }

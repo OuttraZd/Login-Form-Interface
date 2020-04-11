@@ -43,6 +43,11 @@
             display:-webkit-box;
             display:flex;
             width:60%;
+            box-shadow: 25px 0px 0px 0px rgb(248, 246, 246);
+            &-img {
+                display:-webkit-box;
+                display:flex;
+            }
         }
         &-login {
             width:40%;
@@ -52,6 +57,7 @@
 
 @media (min-width:950px) {
     .form-wrapper {
+        height:85%;
         &-login {
             &__formContainer {
                 &-Element {
