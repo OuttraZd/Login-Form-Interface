@@ -6,8 +6,8 @@
 
 body {
   background: #5e2278;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #5e2278), color-stop(88%, #4569bb));
-  background: linear-gradient(0deg, #5e2278 13%, #4569bb 88%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #5e2278), color-stop(88%, #4569bb)) no-repeat;
+  background: linear-gradient(0deg, #5e2278 13%, #4569bb 88%) no-repeat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,8 +339,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 60%;
-    -webkit-box-shadow: 25px 0px 0px 0px #f8f6f6;
-            box-shadow: 25px 0px 0px 0px #f8f6f6;
   }
   .form-wrapper-image-img {
     display: -webkit-box;
@@ -353,9 +351,6 @@ body {
 }
 
 @media (min-width: 950px) {
-  .form-wrapper {
-    height: 85%;
-  }
   .form-wrapper-login__formContainer-Element-img {
     left: 55px;
   }
