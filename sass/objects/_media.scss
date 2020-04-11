@@ -1,9 +1,10 @@
 @media (min-width:800px) {
     .form-wrapper {
+        width:85%;
         &-image {
             display:-webkit-box;
             display:flex;
-            height:30%;
+            width:30%;
         }
         &-login {
             width:70%;
