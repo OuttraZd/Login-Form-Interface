@@ -52,10 +52,10 @@
                     outline:none;
                     cursor: pointer;
                     text-align:center;
+                    -webkit-transition:border ease-in .2s;
+                    transition:border ease-in .2s;
                     &:focus {
                         border:solid 2px #000;
-                        -webkit-transition:ease-in .2s;
-                        transition:ease-in .2s;
                     }
                     &::-webkit-input-placeholder {
                         padding:8px 45px;
@@ -104,9 +104,8 @@
                     font-family: 'Source Sans Pro', sans-serif;
                     font-size:15px;
                     text-transform:uppercase;
-                    -webkit-transition:ease .4;
-                    -webkit-transition:ease .4s;
-                    transition:ease .4s;
+                    -webkit-transition:ease-in .2s;
+                    transition:ease-in .2s;
                     cursor:pointer;
                     a {
                         text-decoration:none;
@@ -121,7 +120,6 @@
                     }
                     &:hover {
                         background-color:#000;
-                        color:#fff;
                     }
                 }
             }
@@ -131,14 +129,14 @@
                 font-size:12px;
                 font-family: 'Source Sans Pro', sans-serif;
                 letter-spacing:1.1px;
+                -webkit-transition:ease-in .2s;
+                transition:ease-in .2s;
                 a {
                     text-decoration:none;
                     color:#000;
                     cursor:pointer;
                     &:hover {
                         color:$green;
-                        -webkit-transition:ease .2s;
-                        transition:ease .2s;
                     }
                 }
             }

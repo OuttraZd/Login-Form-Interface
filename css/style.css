@@ -88,12 +88,12 @@ body {
   outline: none;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: border ease-in .2s;
+  transition: border ease-in .2s;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog:focus, .form-wrapper-login__formContainer-Element__inputPass:focus {
   border: solid 2px #000;
-  -webkit-transition: ease-in .2s;
-  transition: ease-in .2s;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::-webkit-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-webkit-input-placeholder {
@@ -141,9 +141,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  -webkit-transition: ease .4;
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
   cursor: pointer;
 }
 
@@ -164,7 +163,6 @@ body {
 
 .form-wrapper-login__formContainer-Element__button:hover {
   background-color: #000;
-  color: #fff;
 }
 
 .form-wrapper-login__formContainer-Forgot {
@@ -173,6 +171,8 @@ body {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.1px;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
 }
 
 .form-wrapper-login__formContainer-Forgot a {
@@ -183,8 +183,6 @@ body {
 
 .form-wrapper-login__formContainer-Forgot a:hover {
   color: #35d135;
-  -webkit-transition: ease .2s;
-  transition: ease .2s;
 }
 
 .form-wrapper-login__formContainer-Create {
