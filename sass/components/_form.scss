@@ -105,7 +105,8 @@
                     font-size:15px;
                     text-transform:uppercase;
                     -webkit-transition:ease-in .2s;
-                    transition:ease-in .2s;
+                    -webkit-transition:background-color ease-in .2s;
+                    transition:background-color ease-in .2s;
                     cursor:pointer;
                     a {
                         text-decoration:none;
@@ -130,7 +131,8 @@
                 font-family: 'Source Sans Pro', sans-serif;
                 letter-spacing:1.1px;
                 -webkit-transition:ease-in .2s;
-                transition:ease-in .2s;
+                -webkit-transition:color ease-in .2s;
+                transition:color ease-in .2s;
                 a {
                     text-decoration:none;
                     color:#000;
