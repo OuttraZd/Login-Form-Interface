@@ -4,8 +4,8 @@
         transform:rotateX(0deg);
     }
     to {
-        -webkit-transform:rotateX(20deg);
-        transform:rotateX(20deg);
+        -webkit-transform:rotateX(17deg);
+        transform:rotateX(17deg);
     }
 }
 
@@ -15,8 +15,8 @@
         transform:rotateX(0deg);
     }
     to {
-        -webkit-transform:rotateX(20deg);
-        transform:rotateX(20deg);
+        -webkit-transform:rotateX(17deg);
+        transform:rotateX(17deg);
     }
 }
 
@@ -38,11 +38,11 @@
 @keyframes key {
     from {
         -webkit-transform:translateY(0px) rotate(0deg);
-        transform:translateY(0px) rotate(0deg);
+        transform:translateX(0px) rotate(0deg);
     }
     to {
-      -webkit-transform:translateY(-100px) rotate(90deg);
-        transform:translateY(-100px) rotate(90deg);
+      -webkit-transform:translateY(-180px) rotate(120deg);
+        transform:translateX(-180px) rotate(120deg);
     }
 }
 
@@ -64,24 +64,24 @@
     }
     to {
         -webkit-transform:translate(-4px, -10px);
-        transform:translate(-4px, -10px);
+        transform:translate(-10px, -1px);
     }
 }
 
 #hair {
-    -webkit-animation:1s hair infinite linear alternate;
-    animation:1s hair infinite linear alternate;
+    -webkit-animation:.8s hair infinite linear alternate;
+    animation:.8s hair infinite linear alternate;
 }
 
 #key {
-    -webkit-animation:2s key infinite linear alternate;
-    animation:2s key infinite linear alternate;
+    -webkit-animation:2.8s key infinite linear alternate;
+    animation:2.8s key infinite linear alternate;
     -webkit-transform-origin: center;
     transform-origin: center;
     transform-box: fill-box;
 }
 
 #skirt {
-    -webkit-animation:2s skirt infinite linear alternate;
-    animation:1s skirt infinite linear alternate;
+    -webkit-animation:1.9s skirt infinite linear alternate;
+    animation:1.9s skirt infinite linear alternate;
 }

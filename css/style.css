@@ -26,8 +26,8 @@ body {
     transform: rotateX(0deg);
   }
   to {
-    -webkit-transform: rotateX(20deg);
-    transform: rotateX(20deg);
+    -webkit-transform: rotateX(17deg);
+    transform: rotateX(17deg);
   }
 }
 
@@ -37,8 +37,8 @@ body {
     transform: rotateX(0deg);
   }
   to {
-    -webkit-transform: rotateX(20deg);
-    transform: rotateX(20deg);
+    -webkit-transform: rotateX(17deg);
+    transform: rotateX(17deg);
   }
 }
 
@@ -60,11 +60,11 @@ body {
 @keyframes key {
   from {
     -webkit-transform: translateY(0px) rotate(0deg);
-    transform: translateY(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
   }
   to {
-    -webkit-transform: translateY(-100px) rotate(90deg);
-    transform: translateY(-100px) rotate(90deg);
+    -webkit-transform: translateY(-180px) rotate(120deg);
+    transform: translateX(-180px) rotate(120deg);
   }
 }
 
@@ -86,26 +86,26 @@ body {
   }
   to {
     -webkit-transform: translate(-4px, -10px);
-    transform: translate(-4px, -10px);
+    transform: translate(-10px, -1px);
   }
 }
 
 #hair {
-  -webkit-animation: 1s hair infinite linear alternate;
-  animation: 1s hair infinite linear alternate;
+  -webkit-animation: .8s hair infinite linear alternate;
+  animation: .8s hair infinite linear alternate;
 }
 
 #key {
-  -webkit-animation: 2s key infinite linear alternate;
-  animation: 2s key infinite linear alternate;
+  -webkit-animation: 2.8s key infinite linear alternate;
+  animation: 2.8s key infinite linear alternate;
   -webkit-transform-origin: center;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 #skirt {
-  -webkit-animation: 2s skirt infinite linear alternate;
-  animation: 1s skirt infinite linear alternate;
+  -webkit-animation: 1.9s skirt infinite linear alternate;
+  animation: 1.9s skirt infinite linear alternate;
 }
 
 .form-wrapper {
@@ -123,26 +123,18 @@ body {
 
 .form-wrapper-image {
   display: none;
-  background-color: #f8f8f8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+  background-color: #fff;
 }
 
 .form-wrapper-image-img {
-  width: 95%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: none;
 }
 
 .form-wrapper-login {
   width: 100%;
+  height: 95%;
 }
 
 .form-wrapper-login__h1 {
@@ -285,7 +277,6 @@ body {
 
 .form-wrapper-login__formContainer-Create {
   width: 100%;
-  margin-top: 100px;
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.1px;
@@ -298,6 +289,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+  margin-top: 90px;
 }
 
 .form-wrapper-login__formContainer-Create a {
@@ -328,43 +320,100 @@ body {
 }
 
 @media (min-width: 800px) {
-  .form-wrapper {
-    width: 95%;
+  .form-wrapper-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 50%;
   }
   .form-wrapper-login__formContainer-Element-img {
-    left: 50px;
+    left: 55px;
   }
   .form-wrapper-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 60%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 50%;
   }
   .form-wrapper-image-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .form-wrapper-login {
-    width: 40%;
+}
+
+@media (min-width: 900px) {
+  .form-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+  .form-wrapper-login__formContainer-Element-img {
+    left: 65px;
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1080px) {
   .form-wrapper-login__formContainer-Element-img {
-    left: 55px;
+    left: 72px;
   }
 }
 
 @media (min-width: 1200px) {
+  .form-wrapper-login {
+    width: 40%;
+  }
   .form-wrapper-login__formContainer-Element-img {
     left: 70px;
+  }
+  .form-wrapper-image {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .form-wrapper-login__formContainer-Element-img {
+    left: 75px;
   }
 }
 
 @media (min-width: 1600px) {
+  body {
+    overflow: hidden;
+  }
+  .form-wrapper-login {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    margin-right: 120px;
+  }
   .form-wrapper-login__formContainer-Element-img {
-    left: 85px;
+    left: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .form-wrapper-login {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    width: 30%;
+  }
+  .form-wrapper-login__formContainer-Element-img {
+    left: 75px;
+  }
+  .form-wrapper-image {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

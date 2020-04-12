@@ -29,12 +29,19 @@
 
 @media (min-width:800px) {
     .form-wrapper {
-        width:95%;
         &-login {
+            display:-webkit-box;
+            display:flex;
+            -webkit-box-orient:vertical;
+            -webkit-box-direction:normal;
+            flex-direction:column;
+            -webkit-box-pack:center;
+            justify-content:center;
+            width:50%;
             &__formContainer {
                 &-Element {
                     &-img {
-                        left:50px;
+                        left:55px;
                     }
                 }
             }
@@ -42,25 +49,42 @@
         &-image {
             display:-webkit-box;
             display:flex;
-            width:60%;
+            -webkit-box-pack:center;
+            justify-content:center;
+            -webkit-box-align:center;
+            align-items:center;
+            width:50%;
             &-img {
                 display:-webkit-box;
                 display:flex;
             }
         }
+    }
+}
+
+@media (min-width:900px) {
+    .form-wrapper {
+        width:95%;
+        height:95%;
         &-login {
-            width:40%;
+            &__formContainer {
+                &-Element {
+                    &-img {
+                    left:65px;
+                    }
+                }
+            }
         }
     }
 }
 
-@media (min-width:950px) {
+@media (min-width:1080px) {
     .form-wrapper {
         &-login {
             &__formContainer {
                 &-Element {
                     &-img {
-                    left:55px;
+                    left:72px;
                     }
                 }
             }
@@ -71,6 +95,7 @@
 @media (min-width:1200px) {
     .form-wrapper {
         &-login {
+            width:40%;
             &__formContainer {
                 &-Element {
                     &-img {
@@ -79,18 +104,62 @@
                 }
             }
         }
+        &-image {
+            width:60%;
+        }
     }
 }
-@media (min-width:1600px) {
+
+@media (min-width:1400px) {
     .form-wrapper {
         &-login {
             &__formContainer {
                 &-Element {
                     &-img {
-                    left:85px;
+                    left:75px;
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width:1600px) {
+    body {
+        overflow: hidden;
+    }
+    .form-wrapper {
+        &-login {
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+            margin-right:120px;
+            &__formContainer {
+                &-Element {
+                    &-img {
+                        left:80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .form-wrapper {
+        &-login {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            width:30%;
+            &__formContainer {
+                &-Element {
+                    &-img {
+                        left:75px;
+                    }
+                }
+            }
+        }
+        &-image {
+            width:70%;
         }
     }
 }
