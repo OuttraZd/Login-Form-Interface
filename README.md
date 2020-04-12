@@ -8,4 +8,6 @@
 
 ### Time
 
-```2020 April (Some hours)```
+```2020 April ~ 15 hours```
+
+Based on: https://colorlib.com/etc/lf/Login_v1/index.html?email=Z%40wpm.pl&pass=s#
