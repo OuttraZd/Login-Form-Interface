@@ -1,51 +1,13 @@
 @media (min-width:600px) {
     .form-wrapper {
         width:85%;
-        &-login {
-            &__formContainer {
-                &-Element {
-                    &-img {
-                    left:72px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width:670px) {
-    .form-wrapper {
-        &-login {
-            &__formContainer {
-                &-Element {
-                    &-img {
-                    left:80px;
-                    }
-                }
-            }
-        }
     }
 }
 
 @media (min-width:800px) {
     .form-wrapper {
-        &-login {
-            display:-webkit-box;
-            display:flex;
-            -webkit-box-orient:vertical;
-            -webkit-box-direction:normal;
-            flex-direction:column;
-            -webkit-box-pack:center;
-            justify-content:center;
-            width:50%;
-            &__formContainer {
-                &-Element {
-                    &-img {
-                        left:55px;
-                    }
-                }
-            }
-        }
+        width:95%;
+        height:95%;
         &-image {
             display:-webkit-box;
             display:flex;
@@ -53,39 +15,22 @@
             justify-content:center;
             -webkit-box-align:center;
             align-items:center;
-            width:50%;
+            width:55%;
             &-img {
                 display:-webkit-box;
                 display:flex;
             }
         }
-    }
-}
-
-@media (min-width:900px) {
-    .form-wrapper {
-        width:95%;
-        height:95%;
         &-login {
+            width:45%;
+            height:100%;
+            position: relative;
+            bottom:58px;
             &__formContainer {
-                &-Element {
-                    &-img {
-                    left:65px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width:1080px) {
-    .form-wrapper {
-        &-login {
-            &__formContainer {
-                &-Element {
-                    &-img {
-                    left:72px;
-                    }
+                &-Create {
+                    position: absolute;
+                    bottom:-20px;
+                    left:0;
                 }
             }
         }
@@ -94,32 +39,55 @@
 
 @media (min-width:1200px) {
     .form-wrapper {
-        &-login {
-            &__formContainer {
-                &-Element {
-                    &-img {
-                    left:75px;
-                    }
-                }
+        &-image {
+            width:60%;
+            &-img {
+                display:-webkit-box;
+                display:flex;
             }
         }
-    }
-}
-
-@media (min-width:1400px) {
-    body {
-        overflow: hidden;
-    }
-    .form-wrapper {
         &-login {
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-            margin-right:120px;
+            width:40%;
+            height:100%;
+            position: relative;
+            bottom:58px;
+            margin-right:50px;
+            &__h1 {
+                font-size:35px;
+            }
             &__formContainer {
                 &-Element {
-                    &-img {
-                    left:80px;
+                    &__inputLog,
+                    &__inputPass {
+                        width:320px;
+                        height:48px;
+                        font-size:18px;
+                        &::-webkit-input-placeholder {
+                            font-size:15px;
+                        }
+                        &::-moz-placeholder {
+                            font-size:15px;
+                        }
+                        &:-ms-input-placeholder {
+                            font-size:15px;
+                        }
+                        &::-ms-input-placeholder {
+                            font-size:15px;
+                        }
+                        &::placeholder {
+                            font-size:15px;
+                        }
                     }
+                    &__button {
+                        width:320px;
+                        height:48px;
+                    }
+                }
+                &-Forgot {
+                    font-size:13px;
+                }
+                &-Create {
+                    font-size:13px;
                 }
             }
         }
@@ -128,43 +96,114 @@
 
 @media (min-width:1600px) {
     .form-wrapper {
+        &-image {
+            width:65%;
+        }
         &-login {
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-            margin-right:140px;
-            width:40%;
+            width:35%;
+            margin-right:150px;
+            &__h1 {
+                font-size:50px;
+            }
             &__formContainer {
                 &-Element {
-                    &-img {
-                        left:80px;
+                    &__inputLog,
+                    &__inputPass {
+                        height:52px;
+                        width:370px;
+                        font-size:20px;
+                        &::-webkit-input-placeholder {
+                            font-size:16px;
+                        }
+                        &::-moz-placeholder {
+                            font-size:16px;
+                        }
+                        &:-ms-input-placeholder {
+                            font-size:16px;
+                        }
+                        &::-ms-input-placeholder {
+                            font-size:16px;
+                        }
+                        &::placeholder {
+                            font-size:16px;
+                        }
+                    }
+                    &__button {
+                        width:370px;
+                        height:52px;
                     }
                 }
+                &-Forgot {
+                    font-size:15px;
+                }
+                &-Create {
+                    font-size:15px;
+                }
             }
-        }
-        &-image {
-            width:60%;
         }
     }
 }
 
 @media (min-width:1920px) {
     .form-wrapper {
+        &-image {
+            width:65%;
+        }
         &-login {
-            -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-            width:30%;
-            bottom:30px;
-            position: relative;
+            width:35%;
+            margin-right:150px;
+            &__h1 {
+                font-size:55px;
+            }
             &__formContainer {
                 &-Element {
-                    &-img {
-                        left:72px;
+                    &__inputLog,
+                    &__inputPass {
+                        width:480px;
+                        height:60px;
+                        font-size:21px;
+                        &::-webkit-input-placeholder {
+                            font-size:17px;
+                        }
+                        &::-moz-placeholder {
+                            font-size:17px;
+                        }
+                        &:-ms-input-placeholder {
+                            font-size:17px;
+                        }
+                        &::-ms-input-placeholder {
+                            font-size:17px;
+                        }
+                        &::placeholder {
+                            font-size:17px;
+                        }
                     }
+                    &__button {
+                        width:480px;
+                        height:60px;
+                        font-size:20px;
+                    }
+                }
+                &-Forgot {
+                    font-size:17px;
+                }
+                &-Create {
+                    font-size:17px;
                 }
             }
         }
-        &-image {
-            width:70%;
+    }
+}
+
+@media (max-height:380px) {
+    .form-wrapper {
+        &-login {
+            &__formContainer {
+                &-Create {
+                    bottom:-30px;
+                    position:absolute;
+                }
+            }
         }
     }
 }
