@@ -199,28 +199,36 @@ body {
   padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog:-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass:-ms-input-placeholder {
   padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::-ms-input-placeholder, .form-wrapper-login__formContainer-Element__inputPass::-ms-input-placeholder {
   padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
   padding: 8px 45px;
   font-size: 13px;
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
+  text-align: left;
+}
+
+.form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 30px;
+  left: 56px;
 }
 
 .form-wrapper-login__formContainer-Element__button {
@@ -310,6 +318,21 @@ body {
   .form-wrapper {
     width: 85%;
   }
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 80px;
+  }
+}
+
+@media (min-width: 660px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 90px;
+  }
+}
+
+@media (min-width: 740px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 100px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -340,10 +363,25 @@ body {
     position: relative;
     bottom: 58px;
   }
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 60px;
+  }
   .form-wrapper-login__formContainer-Create {
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     left: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 70px;
+  }
+}
+
+@media (min-width: 1015px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 80px;
   }
 }
 
@@ -383,6 +421,10 @@ body {
   .form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
     font-size: 15px;
   }
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    top: 35px;
+    left: 85px;
+  }
   .form-wrapper-login__formContainer-Element__button {
     width: 320px;
     height: 48px;
@@ -392,6 +434,42 @@ body {
   }
   .form-wrapper-login__formContainer-Create {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 1270px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 95px;
+  }
+}
+
+@media (min-width: 1310px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 105px;
+  }
+}
+
+@media (min-width: 1370px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 115px;
+  }
+}
+
+@media (min-width: 1415px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 125px;
+  }
+}
+
+@media (min-width: 1495px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 140px;
+  }
+}
+
+@media (min-width: 1575px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 155px;
   }
 }
 
@@ -423,6 +501,10 @@ body {
   .form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
     font-size: 16px;
   }
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    top: 36px;
+    left: 80px;
+  }
   .form-wrapper-login__formContainer-Element__button {
     width: 370px;
     height: 52px;
@@ -432,6 +514,24 @@ body {
   }
   .form-wrapper-login__formContainer-Create {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 1685px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 95px;
+  }
+}
+
+@media (min-width: 1760px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 110px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 125px;
   }
 }
 
@@ -463,6 +563,12 @@ body {
   .form-wrapper-login__formContainer-Element__inputLog::placeholder, .form-wrapper-login__formContainer-Element__inputPass::placeholder {
     font-size: 17px;
   }
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    width: 17px;
+    height: 17px;
+    top: 38px;
+    left: 75px;
+  }
   .form-wrapper-login__formContainer-Element__button {
     width: 480px;
     height: 60px;
@@ -476,9 +582,15 @@ body {
   }
 }
 
+@media (min-width: 1980px) {
+  .form-wrapper-login__formContainer-Element__inputLog-image, .form-wrapper-login__formContainer-Element__inputPass-image {
+    left: 85px;
+  }
+}
+
 @media (max-height: 380px) {
   .form-wrapper-login__formContainer-Create {
-    bottom: -30px;
+    bottom: -48px;
     position: absolute;
   }
 }

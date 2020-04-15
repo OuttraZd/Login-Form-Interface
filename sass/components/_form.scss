@@ -55,7 +55,7 @@
                     border-radius:50px;
                     background-color:rgb(235, 235, 235);
                     border:none;
-                   outline:none;
+                    outline:none;
                     cursor: pointer;
                     text-align:center;
                     -webkit-transition:border ease-in .2s;
@@ -68,7 +68,14 @@
                         padding:8px 45px;
                         font-size:13px;
                         font-family:'Source Sans Pro', sans-serif;
-                        text-align:center;
+                        text-align:left;
+                    }
+                    &-image {
+                        width:13px;
+                        height:13px;
+                        position:absolute;
+                        top:30px;
+                        left:56px;
                     }
                 }
                 &__button {
